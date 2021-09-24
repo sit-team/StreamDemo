@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.stream.Collectors;
+import java.util.stream.*;
 
 import static com.igt.reactivedemo.streamdemo.UrlDownloader.downloadUrl;
 
@@ -14,7 +14,7 @@ public class Main {
         String hitchUrl = "http://www.clearwhitelight.org/hitch/hhgttg.txt";
 
         var commonEnglishWords = CommonEnglishWordsProvider.commonEnglishWords();
-        var frequencies = Arrays.stream(downloadUrl(hitchUrl)
+        var frequencies = Stream.of(downloadUrl(hitchUrl)
                         .split("\\W+"))
                 .map(String::toLowerCase)
                 .filter(w -> !commonEnglishWords.contains(w))
