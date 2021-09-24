@@ -1,0 +1,3 @@
+String hitchUrl = "http://www.clearwhitelight.org/hitch/hhgttg.txt";
+String anaUrl = "https://www.gutenberg.org/files/1399/1399-0.txt";
+String odysseyUrl = "https://www.gutenberg.org/files/1727/1727-0.txt";
